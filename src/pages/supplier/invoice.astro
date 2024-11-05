@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+---
+
+<BaseLayout>
+  <h1>Solicitar Financiamiento de Factura</h1>
+  <form>
+    <label>Seleccione la Factura:</label>
+    <select name='factura'>
+      <option value='INV-001'>INV-001 - €10,000</option>
+      <!-- Más facturas según disponibilidad -->
+    </select><br />
+    <button type='submit'>Solicitar Financiamiento</button>
+  </form>
+</BaseLayout>

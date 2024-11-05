@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout>
+  <article>
+    <header>
+      <h2>Recuperación de Contraseña</h2>
+    </header>
+    <form>
+      <label>Ingrese su Email:</label>
+      <input type='email' name='email' required /><br />
+      <button onclick="window.location.href='/login'">Enviar Instrucciones</button>
+    </form>
+  </article>
+</BaseLayout>

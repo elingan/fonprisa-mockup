@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout title='Iniciar Sesión'>
+  <article>
+    <header>
+      <h2>Iniciar Sesión</h2>
+    </header>
+    <form>
+      <label>Email:</label>
+      <input type='email' name='email' required /><br />
+      <label>Contraseña:</label>
+      <input type='password' name='password' required /><br />
+      <button onclick="window.location.href='/supplier'">Iniciar Sesión</button>
+    </form>
+    <footer>
+      <a href='recovery.html'>Olvidé mi contraseña</a>
+      <a href='register.html'>Registrarse</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>

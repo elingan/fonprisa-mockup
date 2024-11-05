@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout>
+  <h2>Registro de Usuario</h2>
+  <form>
+    <label>Nombre de la Empresa:</label>
+    <input type='text' name='empresa' required /><br />
+    <label>CIF:</label>
+    <input type='text' name='cif' required /><br />
+    <label>Dirección:</label>
+    <input type='text' name='direccion' required /><br />
+    <label>Teléfono de Contacto:</label>
+    <input type='tel' name='telefono' required /><br />
+    <label>Email del Administrador:</label>
+    <input type='email' name='email' required /><br />
+    <label>Contraseña:</label>
+    <input type='password' name='password' required /><br />
+    <button onclick="window.location.href='login.html'">Registrarse</button>
+  </form>
+</BaseLayout>

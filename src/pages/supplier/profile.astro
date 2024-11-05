@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+---
+
+<BaseLayout>
+  <h2>Perfil del Proveedor</h2>
+  <form>
+    <label>Nombre de la Empresa:</label>
+    <input type='text' name='empresa' value='Nombre Actual' required /><br />
+    <label>Teléfono de Contacto:</label>
+    <input type='tel' name='telefono' value='Teléfono Actual' required /><br />
+    <label>Email del Administrador:</label>
+    <input type='email' name='email' value='Email Actual' required /><br />
+    <button type='submit'>Guardar Cambios</button>
+  </form>
+</BaseLayout>

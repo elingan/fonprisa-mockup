@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+---
+
+<BaseLayout>
+  <h2>Subida de Documentos</h>
+  <form>
+    <label>Subir Factura (PDF):</label>
+    <input type='file' name='factura' accept='application/pdf' required /><br />
+    <label>Subir Orden de Compra (PDF):</label>
+    <input type='file' name='orden_compra' accept='application/pdf' /><br />
+    <label>Subir Lista de Empaque (PDF):</label>
+    <input type='file' name='packing_list' accept='application/pdf' /><br />
+    <label>Subir Nota de Entrega (PDF):</label>
+    <input type='file' name='nota_entrega' accept='application/pdf' /><br />
+    <button type='submit'>Subir Documentos</button>
+  </form>
+</BaseLayout>
