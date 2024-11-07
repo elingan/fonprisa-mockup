@@ -1,0 +1,26 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+.views {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  font-size: small;
+}
+
+// crea un sistema de grillas con 12 columnas y gap de 1rem con css grid
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+} */
+
+/* .grid > div {
+  border: 1px solid #aaa;
+} */

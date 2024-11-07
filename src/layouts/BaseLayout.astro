@@ -1,4 +1,7 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
+import '../global.css'
+
 const title = 'Fonprisa'
 ---
 
@@ -10,25 +13,16 @@ const title = 'Fonprisa'
     <meta name='generator' content={Astro.generator} />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css' />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body class='container'>
     <slot />
-    <div class="views">
-      <a href="/admin">Administrador</a>
-      <a href="/supplier">Proveedor</a>
-      <a href="/buyer">Compradores</a>
+    <div class='views'>
+      <a href='/'>Inicio</a>
+      <a href='/admin'>Administrador</a>
+      <a href='/supplier'>Proveedor</a>
+      <a href='/buyer'>Compradores</a>
     </div>
   </body>
 </html>
 
-<style is:global>
-  .views {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 0.5rem;
-    display: flex;
-    gap: 0.5rem;
-    font-size: small;
-  }
-</style>

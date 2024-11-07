@@ -3,5 +3,28 @@ import SupplierLayout from '../../layouts/SupplierLayout.astro'
 ---
 
 <SupplierLayout>
-  
+  <article>
+    <header><h3>Estadísticas de facturación</h3></header>
+    <div class="grid">
+      <div>
+        <h4>Facturas financiadas</h4>
+        <p>10</p>
+      </div>
+      <div>
+        <h4>Facturas pendientes</h4>
+        <p>5</p>
+      </div>
+      <div>
+        <h4>Facturas rechazadas</h4>
+        <p>2</p>
+      </div>
+      <div>
+        <h4>Facturas pagadas</h4>
+        <p>3</p>
+      </div>
+    </div>
+    <footer>
+      <button onclick="window.location.href='/supplier/'">Volver al inicio</button>
+    </footer>
+  </article>
 </SupplierLayout>

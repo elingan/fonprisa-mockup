@@ -3,5 +3,110 @@ import SupplierLayout from '../../layouts/SupplierLayout.astro'
 ---
 
 <SupplierLayout>
-  
+  <h2>Registro de Proveedor</h2>
+  <form>
+    <div class='grid'>
+      <div>
+        <label for='name'>Nombre:</label>
+        <input type='text' id='name' name='name' required />
+      </div>
+      <div>
+        <label for='cif'>CIF:</label>
+        <input type='text' id='cif' name='cif' required />
+      </div>
+    </div>
+    <fieldset>
+      <legend>Dirección</legend>
+      <label for='street'>Calle:</label>
+      <input type='text' id='street' name='street' required />
+      <div class='grid'>
+        <div>
+          <label for='number'>Número:</label>
+          <input type='text' id='number' name='number' required />
+        </div>
+        <div>
+          <label for='floor'>Piso:</label>
+          <input type='text' id='floor' name='floor' />
+        </div>
+        <div>
+          <label for='door'>Puerta:</label>
+          <input type='text' id='door' name='door' />
+        </div>
+        <div>
+          <label for='zip'>Código Postal:</label>
+          <input type='text' id='zip' name='zip' required />
+        </div>
+      </div>
+      <div class='grid'>
+        <div>
+          <label for='city'>Ciudad:</label>
+          <input type='text' id='city' name='city' required />
+        </div>
+        <div>
+          <label for='province'>Provincia:</label>
+          <input type='text' id='province' name='province' required />
+        </div>
+        <div>
+          <label for='country'>País:</label>
+          <input type='text' id='country' name='country' required />
+        </div>
+      </div>
+    </fieldset>
+    <!-- Grupo -->
+    <label for='group'>Grupo:</label>
+    <input type='text' id='group' name='group' required />
+    <!-- fieldset con información de administrador de la cuenta -->
+    <fieldset>
+      <legend>Administrador de la cuenta</legend>
+      <div class='grid'>
+        <div>
+          <label for='admin_name'>Nombre:</label>
+          <input type='text' id='admin_name' name='admin_name' required />
+        </div>
+        <div>
+          <label for='admin_email'>Correo Electrónico:</label>
+          <input type='email' id='admin_email' name='admin_email' required />
+        </div>
+        <div>
+          <label for='admin_position'>Cargo:</label>
+          <input type='text' id='admin_position' name='admin_position' required />
+        </div>
+      </div>
+      <div class='grid'>
+        <div>
+          <label for='admin_phone'>Teléfono fijo:</label>
+          <input type='tel' id='admin_phone' name='admin_phone' required />
+        </div>
+        <div>
+          <label for='admin_mobile'>Teléfono móvil:</label>
+          <input type='tel' id='admin_mobile' name='admin_mobile' required />
+        </div>
+      </div>
+    </fieldset>
+    <!-- fieldset con datos bancarios -->
+    <fieldset>
+      <legend>Datos Bancarios</legend>
+      <div class='grid'>
+        <div>
+          <label for='bank_name'>Nombre del Banco:</label>
+          <input type='text' id='bank_name' name='bank_name' required placeholder='EasyBank' />
+        </div>
+        <div>
+          <label for='account_holder'>Titular de la cuenta:</label>
+          <input type='text' id='account_holder' name='account_holder' required />
+        </div>
+      </div>
+      <div class='grid'>
+        <div>
+          <label for='iban'>IBAN:</label>
+          <input type='text' id='iban' name='iban' required />
+        </div>
+        <div>
+          <label for='swift'>SWIFT:</label>
+          <input type='text' id='swift' name='swift' required />
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <button type='submit'>Registrar</button>
 </SupplierLayout>
